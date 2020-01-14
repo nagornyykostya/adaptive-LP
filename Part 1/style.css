@@ -3,12 +3,15 @@
 }
 
 html {
-    font-family: "Work Sans", sans-serif ;
+    font-family: "Work Sans", sans-serif;
 }
 
 .page {
     width: 1400px;
     margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -55,14 +58,12 @@ html {
     display: inline-block;
     height: 5px;
     width: 8px;
-    background-image: url(img/Arrow.png);
+    background-image: url(img/arrow.png);
     margin-left: 11px;
-    
 }
 
 .logo {
     display: flex;
-
 }
 
 .logo__image {
@@ -93,4 +94,111 @@ html {
 .top-section {
     background-color: #F3C6BD;
     padding-top: 39px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.about-company {
+    margin-top: 44px;
+}
+
+.additional-navigation {
+    margin-top: 60px;
+    margin-left: auto;
+    display: flex;
+}
+
+.additional-navigation__column {
+    margin-right: 29px;
+}
+
+.nav-links {
+    width: 265px;
+}
+
+.nav-links__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin: 0;
+}
+
+.nav-links__list {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+}
+
+.footer-navigation {
+    height: 338px;
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 44px;
+    display: flex;
+}
+
+.footer-links {
+    height: 50px;
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* .useful-links {
+    width: 1140px;
+    margin: 0 auto;
+    height: 338px;
+} */
+
+.footer__line {
+    border-top: 1px solid #2B292D;
+    width: 100%;
+    opacity: 0.1;
+    margin: 0;
+}
+
+.terms {
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.terms__items {
+    text-decoration: none;
+    color: rgba(43, 41, 45, 0.6);
+    padding-right: 22px;
+}
+
+.social-links {
+    margin-left: auto;
+}
+
+.social-links__item {
+    margin-left: 20px;
+}
+
+.footer__description {
+    line-height: 26px;
+    font-size: 18px;
+    width: 360px;
+    margin-top: 26px;
+    color: rgba(43, 41, 45, 0.6)
+}
+
+.downloads {
+    margin-top: 25px;
+}
+
+.downloads__item {
+    margin-right: 10px;
 }
