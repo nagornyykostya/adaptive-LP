@@ -1,106 +1,210 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .about-company {
-    margin-top: 44px;
+  margin-top: 44px;
 }
 
 .additional-navigation {
-    margin-top: 60px;
-    margin-left: auto;
-    display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
+@media screen and (min-width: 400px) {
+  .additional-navigation {
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: auto;
+  }
+}
 .additional-navigation__column {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 400px) {
+  .additional-navigation__column {
+    margin-top: 0;
     margin-right: 29px;
+  }
 }
 
 .nav-links {
-    width: 265px;
+  width: 265px;
 }
 
 .nav-links__title {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-    margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b292d;
+  margin: 0;
 }
 
 .nav-links__list {
-    list-style-type: none;
-    font-size: 18px;
-    line-height: 30px;
-    color: rgba(43, 41, 45, 0.6);
-    margin: 0;
-    padding: 0;
-    margin-top: 18px;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(43, 41, 45, 0.6);
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.footer__description {
+  display: none;
+  line-height: 26px;
+  font-size: 18px;
+  margin-top: 26px;
+  width: 360px;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 .footer-navigation {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 400px) {
+  .footer-navigation {
     height: 338px;
     width: 1140px;
     margin: 0 auto;
     padding-top: 44px;
     display: flex;
+    flex-direction: row;
+  }
 }
 
 .footer-links {
-    height: 50px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 400px) {
+  .footer-links {
+    flex-direction: row;
     width: 1140px;
     margin: 0 auto;
-    display: flex;
     align-items: center;
+    height: 50px;
+  }
 }
 
-/* .useful-links {
-    width: 1140px;
-    margin: 0 auto;
-    height: 338px;
-} */
-
 .footer__line {
-    border-top: 1px solid #2B292D;
-    width: 100%;
-    opacity: 0.1;
+  border-top: 1px solid #2b292d;
+  width: 100%;
+  opacity: 0.1;
+  margin: 0;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 400px) {
+  .footer__line {
     margin: 0;
+  }
 }
 
 .terms {
+  line-height: 22px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 400px) {
+  .terms {
     line-height: 50px;
-    font-size: 14px;
+    margin-top: 0;
+  }
 }
 
 .terms__items {
-    text-decoration: none;
-    color: rgba(43, 41, 45, 0.6);
-    padding-right: 22px;
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  padding-right: 22px;
 }
 
 .social-links {
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+
+@media screen and (min-width: 400px) {
+  .social-links {
     margin-left: auto;
+    margin-bottom: 0;
+  }
 }
 
 .social-links__item {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.footer__description {
-    line-height: 26px;
-    font-size: 18px;
-    width: 360px;
-    margin-top: 26px;
-    color: rgba(43, 41, 45, 0.6)
+.social-links__item:first-child {
+  margin-left: 0px;
 }
 
 .downloads {
+  margin: 25px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 400px) {
+  .downloads {
+    margin: 0;
     margin-top: 25px;
+    justify-content: left;
+  }
 }
 
 .downloads__item {
-    margin-right: 10px;
+  margin-right: 10px;
+}
+
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-vertical__imgage {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-vertical__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #2b292d;
+  margin-top: 20px;
+}
+
+.logo-vertical__description {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+@media screen and (min-width: 400px) {
+  .logo-vertical {
+    display: none;
+  }
+  .footer__description {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .footer .logo {
+    display: none;
+  }
 }
