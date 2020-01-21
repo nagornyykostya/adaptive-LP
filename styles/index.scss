@@ -9,6 +9,7 @@
 @import "headline.scss";
 @import "tips.scss";
 @import "order.scss";
+@import "inbox.scss";
 
 * {
   box-sizing: border-box;
@@ -16,11 +17,12 @@
 
 html {
   font-family: "Work Sans", sans-serif;
-  color: #2b292d;
+  color: #2b292d; 
 }
 
 .page {
   width: 100%;
+  
 
   @include for-large-up {
     max-width: 1400px;
