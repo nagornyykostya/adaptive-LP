@@ -330,7 +330,6 @@
 @media screen and (min-width: 1400px) {
   .social-links {
     margin-left: auto;
-    margin-bottom: 0;
   }
 }
 .social-links__item {
@@ -582,7 +581,7 @@
 .headline__learn-more-btn {
   background-color: #fff;
   color: #3040c4;
-  width: 158px;
+  width: 100%;
   height: 48px;
   font-size: 18px;
   font-weight: 700;
@@ -590,11 +589,8 @@
   border: none;
   margin-top: 15px;
 }
-@media screen and (min-width: 1400px) {
-  .headline__learn-more-btn {
-    margin-left: 10px;
-    margin-top: 0;
-  }
+.headline__action-btn {
+  width: 100%;
 }
 .headline__banner {
   width: 100%;
@@ -610,15 +606,17 @@
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1400px) {
-  .headline__action-btn {
-    width: 100%;
-  }
-}
 
 @media screen and (min-width: 400px) {
   .action-button {
     width: 160px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .headline__learn-more-btn {
+    margin-left: 10px;
+    margin-top: 0;
+    width: 158px;
   }
 }
 .tips {
