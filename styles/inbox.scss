@@ -2,11 +2,11 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 50px;
-  background-color: #fcf0e3;
+  background-color: rgba(252, 240, 227, 0.4);
 
   @include for-large-up {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 193px;
     padding-right: 99px;
   }
@@ -42,7 +42,6 @@
       line-height: 22px;
       text-align: center;
       color: rgba(43, 41, 45, 0.6);
-
     }
   }
 
@@ -102,7 +101,7 @@
   }
 }
 
-.feedback {
+.review {
   padding: 30px 20px 0 20px;
   display: flex;
   flex-direction: column;
