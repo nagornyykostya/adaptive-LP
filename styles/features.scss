@@ -2,6 +2,10 @@
   display: flex;
   position: relative;
 
+  @include for-large-up {
+    margin-top: 60px;
+  }
+
   @include for-large-down {
     display: none;
   }
