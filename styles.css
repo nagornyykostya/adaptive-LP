@@ -1235,9 +1235,11 @@
 .user-card:last-child {
   margin: 0px;
 }
-.user-card__item_purple {
-  background-color: #3141c5;
-  box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
+@media screen and (min-width: 1400px) {
+  .user-card__item_purple {
+    background-color: #3141c5;
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
+  }
 }
 .user-card__img {
   max-width: 100%;
